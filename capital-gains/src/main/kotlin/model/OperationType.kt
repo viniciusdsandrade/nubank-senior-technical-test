@@ -1,3 +1,11 @@
 package model
 
-enum class OperationType { buy, sell }
+import com.fasterxml.jackson.annotation.JsonProperty
+
+enum class OperationType {
+    @JsonProperty("buy")
+    BUY,
+
+    @JsonProperty("sell")
+    SELL
+}
